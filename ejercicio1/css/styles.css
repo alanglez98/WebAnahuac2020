@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Girassol|Rajdhani&display=swap');
+
+body {
+    background-image: url(../imgs/fondo.jpg);
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 600px;
+    background-color: rgb(142, 173, 127);
+    padding: 1em;
+}
+
+h1 {
+    font-family: AQUI POR TU FUENTE ZORRA;
+    font-weight: 700; 
+    color: rgb(56, 12, 12) ;
+}
+
+p{
+    font-family: AQUÍ PON LA OTRA;
+    font-weight: 300; 
+    color: rgb(156, 62, 62) ;
+}
+
+.parrafo {
+    color: rgb(88, 65, 34);
+}
+
+video {
+    width: 600px;
+}
+
+img {
+    width: 600px;
+}
+
+.logo {
+    width: 60px;
+}
+
+/* para navegación*/
+
+ul {
+    display:flex; 
+    justify-content: space-evenly;
+    list-style: none;
+}
+li {
+    font-family: 'Girassol', cursive;
+    list-style: none;
+    padding: 0 1rem;
+}
+
+a {text-decoration: none;}
+nav ul li:hover 
+{
+    background-color: black;
+    color: white;
+    padding: 0 1rem;
+}
