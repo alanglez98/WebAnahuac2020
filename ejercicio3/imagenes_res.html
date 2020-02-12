@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Imágenes responsivas</title>
+    <link rel="stylesheet" href="css/res.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Imágenes responsivas.
+            </h1>
+        </header>
+        <main>
+            <img src="images/billie_original.png" 
+            alt="Imagen de Billie."
+            sizes="(max-width: 1200px) 100vw, 1200px"
+            srcset="
+            images/billie468.jpg 468w,
+            images/billie768.jpg 768w,
+            images/billie1024.jpg 1024w,
+            ">
+        </main>
+        <footer>
+            <p>Sitio. ®</p>
+        </footer>
+    </div>
+</body>
+</html>
