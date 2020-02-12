@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Girassol|Rajdhani&display=swap');
 
 body {
-    background-image: url(../imgs/fondo.jpg);
+    background-image: url(../images/fondo.jpg);
 }
 
 
 .container {
     margin: 0 auto;
     width: 600px;
-    background-color: rgb(142, 173, 127);
+    background-color: darkorange;
     padding: 1em;
 }
 
 h1 {
-    font-family: AQUI POR TU FUENTE ZORRA;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 700; 
-    color: rgb(56, 12, 12) ;
+    color: dimgrey;
 }
 
 p{
-    font-family: AQUÍ PON LA OTRA;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300; 
     color: rgb(156, 62, 62) ;
 }
 
 .parrafo {
-    color: rgb(88, 65, 34);
+    color: black;
 }
 
 video {
@@ -43,12 +43,13 @@ img {
 /* para navegación*/
 
 ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display:flex; 
     justify-content: space-evenly;
     list-style: none;
 }
 li {
-    font-family: 'Girassol', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     list-style: none;
     padding: 0 1rem;
 }
