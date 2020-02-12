@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: wheat;
+}
+.container{
+    width: 80vw;
+    margin: 0 auto;
+    background-color: thistle;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+p {
+    font-weight: 300;
+}
+h1, h2, p, img {
+    padding: .4rem;
+}
+#monet {
+    width: 300px;
+    float: left;
+    shape-outside: circle(94pix at center center);
+}
+#monet2 {
+    width: 300px;
+    float: left;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+#sunflower {
+    width: 300px;
+    float: left;
+    shape-outside: url(../images/monet3.jpg);
+}
+main{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "u u u d d d"
+    "u u u d d d"
+    "t t t d d d"
+    "t t t . . ."
+    ;
+}
+#uno {
+    grid-area: u;
+}
+#dos {
+    grid-area: d;
+}
+#tres {
+    grid-area: t;
+}
