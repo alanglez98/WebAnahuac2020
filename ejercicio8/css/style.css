@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+
+html.sr .load-hidden {
+    visibility: hidden;
+    font-family: 'Cardo', serif;
+  }
+
+  .widget-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: black;
+    border-radius: 8px;
+    font-family: 'Cardo', serif;
+  }
+
+  .widget {
+    width: 15%;
+    height: 50px;
+    flex: auto;
+    margin: 0.5rem;
+    background: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Cardo', serif;
+  }
+
+  html.sr .widget {
+    visibility: hidden;
+    font-family: 'Cardo', serif;
+  }
+
+  h1 {
+      font-size: 3rem;
+      font-weight: 800;
+  }
+
+  .headline {
+    font-weight: 700;
+  }
+
+  h2 {
+    font-family: 'Cardo', serif;
+
+  }
+
+.img1 {
+      width: 600px;
+  }
+
+.img2 {
+    width: 600px;
+}
+
+.img3 {
+    width: 600px;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    text-align: justify;
+
+}
+h2 {
+    font-size: 14px;
+} 
