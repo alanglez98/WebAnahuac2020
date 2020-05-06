@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,800i&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+    gap: 3px;
+    grid-template-areas: 
+    ". . . . . ."
+    ". . he ma ma ."
+    ". . ju . . ."
+    " . . fo fo . ."
+    ;
+}
+header {
+    grid-area: he;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: rgb(241, 100, 114);
+    color: rgb(179, 27, 42);
+}
+h3 {
+    grid-area: ju;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(241, 100, 114);
+    color: rgb(179, 27, 42);
+}
+main {
+    grid-area: ma;
+}
+
+footer {
+    grid-area: fo;
+    background-color: rgb(241, 100, 114);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 40vw;
+}
+a {
+    text-decoration: none;
+    color: rgb(179, 27, 42);
+    size: 5px;
+}
