@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    background: #EF6572;
+  }
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: EF6572;
+  }
+  
+  .header h2 {
+    font-family: 'Merriweather', serif;
+    color: #A71C2C;
+    font-size: 50px;
+  }
+  .h3 {
+      font-family: 'Merriweather', serif;
+      color: #A71C2C;
+      font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #EF6572;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    position: inherit;
+    display: inline;
+    font-family: 'Merriweather', serif;
+    color: #A71C2C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #A71C2C;
+    color: #EF6572;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 50%;
+    background-color: #EF6572;
+    color: #A71C2C;
+    font-family: 'Open Sans', sans-serif;
+   
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 50%;
+    background-color: #EF6572;
+    color: #A71C2C;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  
+  .fa-instagram {
+    background: #A71C2C;
+    color: #EF6572;
+    border-radius: 50%;
+  }
+  
+  .fa-pinterest {
+    background: #A71C2C;
+    color: #EF6572;
+    border-radius: 50%;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color:#EF6572;;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #EF6572;
+    margin-top: 20px;
+    }
+    
+    .footer .cherry {
+        width: 120px;
+        height: 90px;
+    }
+    
+      
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+
+	div#parentContainer { 
+        padding:50px; position:relative; }
+	p#textToBeCovered {
+         color:#A71C2C; 
+         font-size:15px; 
+         position:relative; 
+         z-index:0; }
+	img#imageOnTop { 
+        background-color: none; 
+        height:300px; 
+        left:300px; 
+        position:absolute; 
+        top:300px; 
+        width:200px; 
+        z-index:1; }
+    
+    img#imageOnTop2 { 
+        background-color: none; 
+        height:100px; 
+        left:300px; 
+        position:absolute; 
+        top:100px; 
+        width:200px; 
+        z-index:1; }
+    
