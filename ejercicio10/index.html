@@ -4,47 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>alanglez</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
 <div class="header">
-  <h2>alanglez</h2>
+<h2>alan gonzalez</h2>
 </div>
 
 <div class="topnav">
-  <a href="#">Design</a>
-  <a href="poetry.html">Photography</a>
-  <a href="#" style="float:right">Poetry</a>
-  <a href="#" style="float:right">Daily Photos</a>
+  <a href="./index.html" style="float: left;">home</a>
+  <a href="./poetry.html" style="float:right">poetry</a>
+  <a href="./daily-photos.html" style="float:right">daily photos</a>
+  <a href="./index-photo.html" style="float:right">photography</a>
+  <a href="./design.html" style="float: right">design</a>
 </div>
 
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-      <img src="images/yo-02.png" alt="yo">
+      <!-- partial:index.partial.html -->
+<div class="portrait" id="portrait">
+  <div class="fill cover-img"></div>
+  <div class="fill z-10 hover">
+     <div class="fill cover-img hover-img"></div>
+  </div>
+</div>
+<!-- partial -->
+ <script  src="./js/portrait.js"></script>
     </div>
   </div>
 
   <div class="rightcolumn">
     <div class="card">
-      <h2>About Me</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam nam tenetur, hic dignissimos odit incidunt cupiditate, eligendi ullam nihil odio laborum in atque quisquam modi aut aperiam omnis esse deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum repellendus nobis molestias, obcaecati quibusdam alias, temporibus aperiam libero quam minus magni aliquam, ullam minima voluptatum molestiae voluptates illo rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse natus mollitia perferendis cumque nihil corporis consequatur impedit odit porro repudiandae quidem, ut et iusto blanditiis quia sint dolorum tempora aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur aut eum fuga magnam reprehenderit odit quibusdam, accusantium laborum? Nam architecto animi illum temporibus error nobis rem voluptatibus nostrum similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quaerat a, architecto nobis cumque commodi, pariatur sunt ab porro maiores amet reprehenderit impedit quisquam, delectus recusandae. Autem ipsum consequuntur facere!</p>
+      <h2>about me</h2>
+      <p>even though i love to talk about myself i don’t know what to say here. i am a person who thinks he feels a lot and sometimes i try to express that by creating something. here you will find that, everything i like to create from work i’ve done for school to my most personal photos and poetry. take a look and try to define me.</p>
     </div>
     <div class="card">
-      <h3>Follow Me</h3>
-      <a href="#" class="fa fa-instagram"></a>
-      <a href="#" class="fa fa-pinterest"></a>
-      <p>Some text..</p>
+      <h2>follow & contact me</h2>
+      <a href="https://www.instagram.com/iamalanglez/" class="fa fa-instagram"></a>
+      <a href="https://open.spotify.com/user/1276972566?si=Ujg_MAKgQZeLEYmAemmr6g" class="fa fa-spotify"></a>
+      <a href="https://www.pinterest.com/iamalanglez/" class="fa fa-pinterest"></a>
+  
+      <a class="mail" href="javascript:location='mailto:\u0067\u006f\u006e\u007a\u0061\u006c\u0065\u007a\u0076\u0061\u007a\u0071\u0075\u0065\u007a\u0061\u006c\u0061\u006e\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0"><script type="text/javascript">document.write('\u0067\u006f\u006e\u007a\u0061\u006c\u0065\u007a\u0076\u0061\u007a\u0071\u0075\u0065\u007a\u0061\u006c\u0061\u006e\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d')</script></a>
+
     </div>
   </div>
 </div>
 
-<div class="footer">
-    <img class="cherry" src="images/cereza.PNG">
-</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167217242-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167217242-1');
+</script>
 
 </body>
+<div class="footer">
+  <img class="cherry" src="images/cereza.PNG">
+</div>
 </html>

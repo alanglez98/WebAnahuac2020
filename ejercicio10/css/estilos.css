@@ -7,8 +7,76 @@
   body {
     font-family: 'Open Sans', sans-serif;
     padding: 10px;
-    background: #EF6572;
+    margin: 0;
+    padding: 0;
+    background-color: #EF6572;
+    --translate-x: 30px;   
+    --translate-y: -20px;
   }
+/* PORTRAIT */
+.portrait {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+}
+.portrait:hover .hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+  opacity: 0.4;
+}
+.portrait:hover .hover-img {
+  -moz-transform: translate(var(--translate-x), var(--translate-y));
+  -ms-transform: translate(var(--translate-x), var(--translate-y));
+  -webkit-transform: translate(var(--translate-x), var(--translate-y));
+  transform: translate(var(--translate-x), var(--translate-y));
+}
+
+.fill, .hover-img:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.hover {
+  -moz-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  -o-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  -webkit-transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: all 380ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+.hover-img {
+  -moz-transition: opacity, -moz-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  -o-transition: opacity, -o-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  -webkit-transition: opacity, -webkit-transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+  transition: opacity, transform 320ms cubic-bezier(0.16, 0.01, 0.77, 1);
+}
+.hover-img:after {
+  content: '';
+  background-color: #A71C2C;
+  mix-blend-mode: color;
+}
+
+.cover-img {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(/ejercicio10/images/portrait.jpg);
+}
 /* Header/Blog Title */
 .header {
     padding: 30px;
@@ -69,31 +137,23 @@
     background-color: #EF6572;
     color: #A71C2C;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 20px;
+    padding-left: 5px;
   }
 
   .fa {
-    padding: 20px;
+    padding: 5px;
     font-size: 30px;
-    width: 50px;
+    width: 70px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    color:#A71C2C;
   }
-  
-  
-  .fa-instagram {
-    background: #A71C2C;
-    color: #EF6572;
-    border-radius: 50%;
+
+  .fa .fa-instagram {
+    width: 120px;
+    height: 90px;
   }
-  
-  .fa-pinterest {
-    background: #A71C2C;
-    color: #EF6572;
-    border-radius: 50%;
-  }
-  
+
   /* Fake image */
   .fakeimg {
     background-color: #aaa;
@@ -114,13 +174,20 @@
     display: table;
     clear: both;
   }
+
+  .mail {
+    padding: 0rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #A71C2C;
+    font-size: 15px;
+  }
   
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
     background: #EF6572;
-    margin-top: 20px;
+    margin-top: 100px;
     }
     
     .footer .cherry {
@@ -153,21 +220,55 @@
          font-size:15px; 
          position:relative; 
          z-index:0; }
-	img#imageOnTop { 
-        background-color: none; 
-        height:300px; 
-        left:300px; 
-        position:absolute; 
-        top:300px; 
-        width:200px; 
-        z-index:1; }
-    
-    img#imageOnTop2 { 
-        background-color: none; 
-        height:100px; 
-        left:300px; 
-        position:absolute; 
-        top:100px; 
-        width:200px; 
-        z-index:1; }
-    
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {      
+ 
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {  
+    h1 {
+      font-size: 1rem;
+    }
+}
